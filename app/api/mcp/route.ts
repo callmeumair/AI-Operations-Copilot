@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { executeTool } from '../../../lib/mcp/executor';
+import { executeTool } from '@/lib/mcp/executor';
 
 export async function POST(req: Request) {
   try {

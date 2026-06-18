@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { createSSEStream, activeStreams } from '../../../../lib/stream-helpers';
+import { createSSEStream, activeStreams } from '@/lib/stream-helpers';
 
 export const dynamic = 'force-dynamic';
 

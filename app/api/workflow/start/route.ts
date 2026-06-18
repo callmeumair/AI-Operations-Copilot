@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server';
-import { supabaseAdmin } from '../../../lib/supabase';
-import { createExecutionPlan } from '../../../lib/agents/planner';
-import { executeTaskWithAgent } from '../../../lib/agents/executor';
-import { synthesizeResults } from '../../../lib/agents/synthesizer';
-import { executeTool } from '../../../lib/mcp/executor';
-import { matchSOPs } from '../../../lib/rag/retrieve';
-import { activeStreams } from '../../../lib/stream-helpers';
-import { TaskExecution } from '../../../lib/types';
+import { supabaseAdmin } from '@/lib/supabase';
+import { createExecutionPlan } from '@/lib/agents/planner';
+import { executeTaskWithAgent } from '@/lib/agents/executor';
+import { synthesizeResults } from '@/lib/agents/synthesizer';
+import { executeTool } from '@/lib/mcp/executor';
+import { matchSOPs } from '@/lib/rag/retrieve';
+import { activeStreams } from '@/lib/stream-helpers';
+import { TaskExecution } from '@/lib/types';
 
 export async function POST(req: Request) {
   try {

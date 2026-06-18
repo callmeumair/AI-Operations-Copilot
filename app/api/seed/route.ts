@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
-import { supabaseAdmin } from '../../../lib/supabase';
-import { openai } from '../../../lib/openai';
-import { sopDocuments } from '../../../lib/rag/sop-data';
+import { supabaseAdmin } from '@/lib/supabase';
+import { openai } from '@/lib/openai';
+import { sopDocuments } from '@/lib/rag/sop-data';
 
 export async function POST(req: Request) {
   try {
